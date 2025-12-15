@@ -48,8 +48,8 @@ export default async function Home() {
           </div>
           {/* Only show on small screens*/}
           <div className="md:hidden flex space-x-4 mt-2">
-            <Link href="/Archives" className="hover:text-blue-600 duration-400">Archives</Link>
-            <Link href="/Projects" className="hover:text-blue-800 duration-400 font-medium">Projects</Link>
+            <Link href="/archives" className="hover:text-blue-600 duration-400">Archives</Link>
+            <Link href="/projects" className="hover:text-blue-800 duration-400 font-medium">Projects</Link>
           </div>
         </div>
 

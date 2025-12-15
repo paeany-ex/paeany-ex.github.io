@@ -1,0 +1,27 @@
+1:"$Sreact.fragment"
+2:I[69197,["/_next/static/chunks/7a63eae5fd109898.js"],""]
+7:I[75049,["/_next/static/chunks/d2c13bb33c4fcd54.js","/_next/static/chunks/8e33346359af923a.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+3:T9b1,<h2>Who Cares?</h2>
+<p><em><strong>Companies do not care about your privacy.</strong></em></p>
+<p>Shocking right? Of course not, your entire digital footprint is being sold to advertisers to sell you products and services you most likely do not need.</p>
+<p>For me these products are mostly software based application that utilize a subscription fee to keep me using their bogus app, when in reality the issue has always been mental.</p>
+<p>If I had half a brain and arguably less of a heart I'd be using this information to my advantage, creating another bullshit dating app, or habit tracking app, selling a course or two in the case of cybersecurity and not have to actually hack or study anything. Use AI workflows to scrape the web or spam for whatever information I could sell to make a buck.</p>
+<p>Ultimately you are just a product in the eyes of companies, which for many its fine. Numerous times people have told me they don't give a crap about privacy notibly stating that they (the companies) already have all that information anyways and as much as it pains me to say this... They're right.</p>
+<h2>The cost of privacy.</h2>
+<p>It's baffling when some say,
+"If you have nothing to hide your privacy shouldn't matter."</p>
+<p>Personally I am under the impression that I should not any of my rights infringed upon because of the actions of a few bad actors. I believe in privacy, freedom of speech, and the right to be left alone.</p>
+<p>I'd prefer not to have my data used to market, influence, and control those of us who are more trusting in the powers that may be. For once I wish to not have assassinations broadcasted widespread or to wake up to see another war break out on my timeline. Naive of me, possibly.</p>
+<p>As long as I am not harming anyone or breaking any laws, I should be able to live my life as I see fit without the prying eyes of corporations and governments looking over my shoulder.
+Probably sound a bit wacko, but I'd rather be skeptical than complacent in this case.</p>
+<p>Long story short,your data is probably being used, sold, and manipulated in ways you may not even be aware of.
+I choose to arm myself with a wealth of knowledge to prepare for the worst especially in this era. I choose not to be manipulated. I will be free.</p>
+<p>Knowledge is power, never stop learning and your efforts will be rewarded.</p>
+<h2>Read more about data privacy here!</h2>
+<p>https://www.sproutdistro.com/catalog/zines/security/turn-off-your-phone/</p>
+0:{"buildId":"r3J14eIrMzNeAWkLPDO3M","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"container mx-auto","children":[["$","nav",null,{"className":"flex items-center justify-between p-4","children":[["$","div",null,{"className":"text-lg font-semibold","children":[["$","$L2",null,{"href":"/","children":"Archives"}],["$","div",null,{"className":"flex","children":["$","$L2",null,{"href":"/about","className":"text-sm text-gray-500 hover:text-gray-600 duration-200","children":"by Paeany"}]}]]}],["$","div",null,{"className":"hidden md:flex space-x-4","children":[["$","$L2",null,{"href":"/Archives","className":"hover:text-gray-600 duration-400","children":"Archives"}],["$","$L2",null,{"href":"/Projects","className":"hover:text-gray-800 duration-400 font-medium","children":"Projects"}]]}]]}],["$","hr",null,{}],["$","main",null,{"className":"p-4","children":[["$","h1",null,{"className":"text-2xl font-bold mb-4","children":"We take your privacy - seriously."}],["$","p",null,{"className":"text-sm text-gray-500 mb-4","children":"12/15/2025"}],["$","div",null,{"className":"prose","dangerouslySetInnerHTML":{"__html":"$3"}}]]}],"$L4"]}],["$L5"],"$L6"]}],"loading":null,"isPartial":false}
+4:["$","footer",null,{}]
+5:["$","script","script-0",{"src":"/_next/static/chunks/7a63eae5fd109898.js","async":true}]
+6:["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]
+9:null

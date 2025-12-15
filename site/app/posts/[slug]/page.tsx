@@ -51,12 +51,12 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   }
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto">
       <nav className="flex items-center justify-between p-4">
         <div className="text-lg font-semibold">
           <Link href="/">Archives</Link>
           <div className="flex">
-            <p className="text-sm text-gray-500 hover:text-gray-600 duration-200">by Paeany</p>
+             <Link href="/about" className="text-sm text-gray-500 hover:text-gray-600 duration-200">by Paeany</Link>
           </div>
         </div>
         <div className="hidden md:flex space-x-4">

@@ -58,6 +58,9 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
       <nav className="flex items-center justify-between p-4">
         <div className="text-lg font-semibold flex flex-col">
           <Link href="/">Archives</Link>
+          <div className="flex">
+             <Link href="/about" className="text-sm text-gray-500 hover:text-gray-600 duration-200">by Paeany</Link>
+          </div>
           <Link href="/about" className="text-sm text-gray-500 hover:text-gray-600 duration-200">by Paeany</Link>
         </div>
         {/* Only show on small screens*/}

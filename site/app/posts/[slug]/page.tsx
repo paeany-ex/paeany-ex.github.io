@@ -55,7 +55,6 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
   return (
     <div className="container mx-auto">
-    <div className="container mx-auto">
       <nav className="flex items-center justify-between p-4">
         <div className="text-lg font-semibold flex flex-col">
           <Link href="/">Archives</Link>

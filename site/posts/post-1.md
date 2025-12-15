@@ -24,7 +24,10 @@ Personally I am under the impression that I should not any of my rights infringe
 
  I'd prefer not to have my data used to market, influence, and control those of us who are more trusting in the powers that may be. For once I wish to not have assassinations broadcasted widespread or to wake up to see another war break out on my timeline. Naive of me, possibly.
 
+<<<<<<<<< Temporary merge branch 1
+=========
 
+>>>>>>>>> Temporary merge branch 2
 As long as I am not harming anyone or breaking any laws, I should be able to live my life as I see fit without the prying eyes of corporations and governments looking over my shoulder.
 Probably sound a bit wacko, but I'd rather be skeptical than complacent in this case.
 

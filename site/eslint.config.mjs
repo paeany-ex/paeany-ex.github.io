@@ -1,18 +1,32 @@
-import { defineConfig, globalIgnores } from "eslint/config";
-import nextVitals from "eslint-config-next/core-web-vitals";
-import nextTs from "eslint-config-next/typescript";
+import { fixupConfigRules, fixupPluginRules } from "@eslint/eslintrc";
+import typescriptEslint from "@typescript-eslint/eslint-plugin";
+import tsParser from "@typescript-eslint/parser";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import js from "@eslint/js";
 
-const eslintConfig = defineConfig([
-  ...nextVitals,
-  ...nextTs,
-  // Override default ignores of eslint-config-next.
-  globalIgnores([
-    // Default ignores of eslint-config-next:
-    ".next/**",
-    "out/**",
-    "build/**",
-    "next-env.d.ts",
-  ]),
-]);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-export default eslintConfig;
+export default [
+  {
+    languageOptions: {
+      globals: {
+        ...js.configs.recommended.languageOptions.globals,
+      },
+      parser: tsParser,
+      ecmaVersion: "latest",
+      sourceType: "module",
+    },
+  },
+  ...fixupConfigRules(js.configs.recommended),
+  {
+    plugins: {
+      "@typescript-eslint": typescriptEslint,
+    },
+
+    rules: {
+      ...typescriptEslint.configs.recommended.rules,
+    },
+  },
+];

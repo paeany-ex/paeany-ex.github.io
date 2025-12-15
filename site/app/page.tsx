@@ -17,7 +17,7 @@ async function getPosts(): Promise<Post[]> {
 
   const posts = await Promise.all(
     filenames
-      .filter(filename => filename.endsWith('.md'))
+      .filter((filename: string) => filename.endsWith('.md'))
       .map(async filename => {
         const filePath = path.join(postsDirectory, filename);
         const fileContents = await fs.readFile(filePath, 'utf8');
@@ -50,13 +50,12 @@ export default async function Home() {
           <div className="md:hidden flex space-x-4 mt-2">
             <Link href="/archives" className="hover:text-blue-600 duration-400">Archives</Link>
             <Link href="/projects" className="hover:text-blue-800 duration-400 font-medium">Projects</Link>
-            <Link href="/about" className="text-sm text-gray-500 hover:text-gray-600 duration-200">by Paeany</Link>
           </div>
         </div>
 
         <div className="hidden md:flex space-x-4">
-          <Link href="/archives" className="hover:text-gray-600 duration-400">Archives</Link>
-          <Link href="/projects" className="hover:text-gray-800 duration-400 font-medium">Projects</Link>
+          <Link href="/archives" className="hover:text-blue-500 duration-400">Archives</Link>
+          <Link href="/projects" className="hover:text-blue-500 duration-400 font-medium">Projects</Link>
         </div>
       </nav>
 

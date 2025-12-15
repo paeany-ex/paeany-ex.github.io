@@ -46,7 +46,14 @@ export default async function Home() {
           <div className="flex">
             <Link href="/about" className="text-sm text-gray-500 hover:text-gray-600 duration-200">by Paeany</Link>
           </div>
+          {/* Only show on small screens*/}
+          <div className="md:hidden flex space-x-4 mt-2">
+            <Link href="/archives" className="hover:text-blue-600 duration-400">Archives</Link>
+            <Link href="/projects" className="hover:text-blue-800 duration-400 font-medium">Projects</Link>
+            <Link href="/about" className="text-sm text-gray-500 hover:text-gray-600 duration-200">by Paeany</Link>
+          </div>
         </div>
+
         <div className="hidden md:flex space-x-4">
           <Link href="/archives" className="hover:text-gray-600 duration-400">Archives</Link>
           <Link href="/projects" className="hover:text-gray-800 duration-400 font-medium">Projects</Link>
@@ -55,24 +62,35 @@ export default async function Home() {
 
       <hr />
 
-      <main className="min-h-screen p-4">
-        <h1 className="text-lg font-bold mb-4 uppercase font-serif italic max-w-lg">
-          "The most beautiful thing we can experience is the mysterious." – Albert Einstein
-        </h1>
+      <main className="min-h-screen p-4 justify-between flex">
+        <div>
+          <h1 className="text-lg font-bold mb-4 uppercase font-serif italic max-w-lg">
+            "The most beautiful thing we can experience is the mysterious." – Albert Einstein
+          </h1>
 
-        <div className="space-y-4">
+          <div className="space-y-4">
           {posts.map(post => (
             <div key={post.slug} className="border pb-4 mb-4 p-4">
               <Link href={`/posts/${post.slug}`} className="text-xl font-medium hover:underline">
                 {post.title}
               </Link>
               <p className="text-sm text-gray-500">{new Date(post.date).toLocaleDateString()}</p>
-              <p className="mt-2 text-gray-700">{post.excerpt}</p>
+              <p className="mt-2">{post.excerpt}</p>
             </div>
           ))}
+          </div>
         </div>
-      </main>
 
+        <div className="md:max-xl:block hidden">
+          <h2 className="text-xl font-bold mb-4">Projects</h2>
+          <ul className="space-y-2">
+            <li><Link href="/projects/1" className="hover:underline">Project 1</Link></li>
+            <li><Link href="/projects/2" className="hover:underline">Project 2</Link></li>
+            <li><Link href="/projects/3" className="hover:underline">Project 3</Link></li>
+          </ul>
+        </div>
+ 
+      </main>
       <footer></footer>
     </div>
   );

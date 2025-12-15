@@ -3,6 +3,8 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import gfm from 'remark-gfm';
+import breaks from 'remark-breaks';
 import Link from 'next/link';
 
 interface Post {
@@ -18,7 +20,8 @@ async function getPost(slug: string): Promise<Post | null> {
     const fileContents = await fs.readFile(filePath, 'utf8');
     const { data, content } = matter(fileContents);
 
-    const processedContent = await remark().use(html).process(content);
+    const trimmedContent = content.trim();
+    const processedContent = await remark().use(gfm).use(breaks).use(html).process(trimmedContent);
     const contentHtml = processedContent.toString();
 
     return {
@@ -52,16 +55,23 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
 
   return (
     <div className="container mx-auto">
+    <div className="container mx-auto">
       <nav className="flex items-center justify-between p-4">
-        <div className="text-lg font-semibold">
+        <div className="text-lg font-semibold flex flex-col">
           <Link href="/">Archives</Link>
           <div className="flex">
              <Link href="/about" className="text-sm text-gray-500 hover:text-gray-600 duration-200">by Paeany</Link>
           </div>
+          <Link href="/about" className="text-sm text-gray-500 hover:text-gray-600 duration-200">by Paeany</Link>
+        </div>
+        {/* Only show on small screens*/}
+        <div className="md:hidden flex space-x-4 mt-2">
+          <Link href="/archives" className="hover:text-gray-600 duration-400">Archives</Link>
+          <Link href="/projects" className="hover:text-gray-800 duration-400 font-medium">Projects</Link>
         </div>
         <div className="hidden md:flex space-x-4">
-          <Link href="/Archives" className="hover:text-gray-600 duration-400">Archives</Link>
-          <Link href="/Projects" className="hover:text-gray-800 duration-400 font-medium">Projects</Link>
+          <Link href="/archives" className="hover:text-gray-600 duration-400">Archives</Link>
+          <Link href="/projects" className="hover:text-gray-800 duration-400 font-medium">Projects</Link>
         </div>
       </nav>
 
